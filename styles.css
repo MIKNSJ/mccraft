@@ -28,10 +28,9 @@ header {
     margin: tbd;
     */
 
-    /* Scroll header using sticky
+    /* Scroll header using sticky */
     position: sticky;
     top: 0;
-    */
 
     background-color: #D3D3D3; 
 }
@@ -49,14 +48,16 @@ header {
     height: 45px;
 }
 
-.nav_bar_list {
+.nav_menu {
     background-color: #D3D3D3;
-
-    list-style-type: none;
-    position: fixed;
+    position: absolute;
     top: 70px;
     left: 0;
     right: 0;
+}
+
+.nav_bar_list {
+    list-style-type: none;
     padding: 20px 0;
 
     display: none;
@@ -100,10 +101,12 @@ header {
 }
 
 @media screen and (min-width: 750px) {
+    .nav_menu {
+        position: static;
+    }
+
     .nav_bar_list {
         background-color: none;
-    
-        position: static;
     
         display: flex;
         flex-direction: row;
