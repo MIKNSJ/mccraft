@@ -30,6 +30,7 @@ header {
     /* Scroll header using sticky */
     position: sticky;
     top: 0;
+    z-index: 100;
 
     background-color: #FAF9F6; 
 }
@@ -38,7 +39,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 100;
     padding: 10px 5%;
 }
 
@@ -183,11 +184,73 @@ header {
     height: 75%;
 }
 
-.menu {
+.feat_menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
+    padding: 10px 5%;
 }
+
+.feat_menu_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.food_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#gapple_box {
+    position: relative;
+}
+
+.out_of_stock {
+    position: absolute;
+    top: 50px;
+    transform: rotate(-30deg);
+    background-color: #BF0000;
+    width: 150px;
+    height: 20px;
+    font-size: 15px;
+    text-align: center;
+    border: solid;
+}
+
+.food_img {
+    width: 100px;
+    height: 100px;
+}
+
+.food_info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#heart, #hunger {
+    width: 25px;
+    height: 25px;
+}
+
+#emerald {
+    width: 25px;
+    height: 30px;
+}
+
+.takeout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
 @media screen and (min-width: 750px) {
     .nav_menu {
         position: static;
@@ -278,5 +341,41 @@ header {
         width: 250px;
         height: 144px;
         justify-self: end;
+    }
+
+    .feat_menu_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 0;
+        width: 100%;
+    }
+
+    .out_of_stock {
+        top: 100px;
+        width: 275px;
+        height: 30px;
+        font-size: 25px;
+    }
+
+    .food_img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .food_info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #heart, #hunger {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #emerald {
+        width: 30px;
+        height: 40px;
     }
 }
