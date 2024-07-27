@@ -26,10 +26,10 @@
                     <nav class = "nav_menu">
                         <ul class = "nav_menu_list">
                             <li><a href = "#" class = "nav_link">HOME</a></li>
-                            <li><a href = "" class = "nav_link">ABOUT</a></li>
-                            <li><a href = "" class = "nav_link">MENU</a></li>
-                            <li><a href = "" class = "nav_link">TAKEOUT</a></li>
-                            <li><a href = "" class = "nav_link">CONTACT</a></li>
+                            <li><a href = "#about" class = "nav_link">ABOUT</a></li>
+                            <li><a href = "#menu" class = "nav_link">MENU</a></li>
+                            <li><a href = "#takeout" class = "nav_link">TAKEOUT</a></li>
+                            <li><a href = "#contact" class = "nav_link">CONTACT</a></li>
                         </ul>
                     </nav>
 
@@ -65,7 +65,7 @@
             </div>
 
             <div class = "container">
-                <div class = "about">
+                <div id = "about" class = "about">
                     <h1 id = "about_title"> ABOUT </h1>
                     <p id = "about_caption" class = "main_caption">
                         Our business has been around for at least 15 years serving at many locations across the globe.
@@ -86,7 +86,7 @@
             </div>
             
             <div class = "container">
-                <div class = "feat_menu">
+                <div id = "menu" class = "feat_menu">
                     <h1 id = "menu_title"> FEATURED MENU </h1>
 
                     <div class = "feat_menu_list">
@@ -202,10 +202,14 @@
             </div>
 
             <div class = "container">
-                <div class = "takeout">
+                <div id = "takeout" class = "takeout">
                     <section>
                         <h1 class = "takeout_title"> TAKEOUT </h1>
                         <p id = "address" class = "main_caption"> Location: 12345 Mineblocks Street, Plains, Overworld 54321, USA </p>
+                        <p id = "time_caption" class = "main_caption">
+                        Monday - Friday: 8AM - 8PM<br>
+                        Saturday - Sunday: CLOSED
+                        </p>
                         <p id = "takeout_caption" class = "main_caption"> We accept online orders for in-person pickup and from the vendors below.</p>
                     </section>
 
@@ -213,7 +217,7 @@
                         <img src = "assets/doordash.png" alt = "door_dash" id = "door_dash" class = "delivery_img">
                         <img src = "assets/uber_eats.png" alt = "uber_eats" id = "uber_eats" class = "delivery_img">
                         <img src = "assets/grubhub.png" alt = "grubhub" id = "grubhub" class = "delivery_img">
-                        <img src = "assets/postmates.png" alt = "postmates" id = "postmates" id = "postmates" class = "delivery_img">
+                        <img src = "assets/postmates.png" alt = "postmates" id = "postmates" class = "delivery_img">
                     </div>
 
                     <img src = "assets/location.png" alt = "location" id = "location" id = "location">
@@ -228,10 +232,44 @@
             </div>
 
             <div class = "container">
-                <div class = "contact">
-                    <h1> CONTACT </h1>
+                <div id = "contact" class = "contact">
+                    <h1 class = "contact_title"> CONTACT </h1>
+
+                    <div class = "contact_options">
+                        <section>
+                            <p id = "email" class = "main_caption">Email: mccraft@mineblocks.dig</p>
+                            <p id = "phone" class = "main_caption">Phone: (123) 345-6789 </p>
+                        </section>
+
+                        <div class = "socials">
+                            <a href = "#"><img src = "assets/facebook.png" alt = "facebook" id = "facebook" class =
+                                       "socials_img"></a>
+                            <a href = "#"><img src = "assets/instagram.png" alt = "instagram" id = "instagram" class =
+                                       "socials_img"></a>
+                            <a href = "#"><img src = "assets/x_logo.png" alt = "x_logo" id = "x_logo" class =
+                                       "socials_img"></a>
+                            <a href = "#"><img src = "assets/yelp.png" alt = "yelp" id = "yelp" class = "socials_img"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class = "container">
+                <div class = "barrier"></div>
+            </div>
         </main>
+
+        <footer>
+            <div class = "container">
+                <div class = "copyright">
+                    <p id = "c_name" class = "main_caption"> &copy 2024 McCraft </p>
+                    <a href = "https://github.com/MIKNSJ/mccraft", target="_blank", rel="noopener noreferrer", id = "source">View Source</a>
+                </div>
+            </div>
+            
+            <div class = "container">
+                <div id = "last_barrier" class = "barrier"></div>
+            </div>
+        </footer>
     </body>
 </html>
